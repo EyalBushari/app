@@ -1,21 +1,22 @@
-import logo from './logo.svg';
+import { useState } from 'react';
 import './App.css';
+import { Home } from './components/Home';
+import { Store } from './components/Store';
 
 function App() {
+  const [page,setPage]=useState("home");
   return (
     <div className="App">
       <header className="app-header">
-        <h1>דניאל שיווק צנרת</h1>
+        <button onClick={function(){setPage("store")}}>חנות</button>
+        <h1 onClick={function(){setPage("home")}}>דניאל שיווק צנרת</h1>
       </header>
-      <div className='page-body'>
-        <h1>ברוכים הבאים</h1>
-      </div>
-      <div className='flex-row'>
-       <img src='./pictures/picture.jpg' height="300px" width="200px" className='image'/>
-       <img src='./pictures/picture2.jpg' height="300px" width="200px"/>
-      </div>
+      {page=="home" && <Home />}
+      {page=="store" && <Store />}
     </div>
+
   );
+
 }
 
 export default App;
