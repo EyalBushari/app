@@ -7,12 +7,6 @@
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .app-header {
   background-color: #282834;
   height: 20vh;
@@ -33,6 +27,26 @@
   font-size: 20px;
   color: chartreuse;
 }
+
+.odot{
+  height: 30vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center; 
+  justify-content: center;
+  color: rgb(7, 1, 1);
+  padding-top: 20vh;
+}
+.app-header button{
+  background-color: transparent;
+  font-size: 20px;
+  color: chartreuse;
+margin-right: 10px;
+}
+
+
+
 .page-body{
   background-color: #ffffff;
   height: 20vh;
@@ -57,9 +71,17 @@
 .about-us{
   background-color:#ebebeb;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center; 
   justify-content: center;
   color: rgb(7, 1, 1);
   padding: 10vh 20vw;
 }
+
+.our-detils{
+  display: flex;
+  flex-direction: row;
+  align-items: center; 
+  justify-content: center;
+}
+
