@@ -1,11 +1,3 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
 .app-header {
   background-color: #282834;
@@ -77,11 +69,20 @@ margin-right: 10px;
   color: rgb(7, 1, 1);
   padding: 10vh 20vw;
 }
+.about-us h3{
+   text-align: center;
+   direction: rtl;
+}
 
-.our-detils{
+.our-details-pics{
   display: flex;
   flex-direction: row;
   align-items: center; 
   justify-content: center;
 }
 
+.our-details{
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}

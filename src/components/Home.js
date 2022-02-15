@@ -1,3 +1,5 @@
+import { Products } from "../data/products"
+
 export function Home(props) {
     return <div>
         <div className='page-body'>
@@ -14,11 +16,13 @@ export function Home(props) {
                 אצלינו תוכלו למצוא מוצרים באיכות גבוהה, שרות אדיב, ייעוץ והכוונה כשצריך ויחס חם ואנושי.</h3>
                 
       </div>
-        <div className= 'our-details'>
+        <div className='our-details'>
         <h1>המוצרים שלנו</h1>
-            <img onClick={function(){props.updatePage("product","1")}} src='./pictures/picture3.jpeg' height="300px" width="200px" className='image' />
-            <img onClick={function(){props.updatePage("product","2")}} src='./pictures/picture3.jpeg' height="300px" width="200px" className='image' />
-            
+        <div className= 'our-details-pics'>
+        {Products.map (function(product){
+            return   <img onClick={function(){props.updatePage("product",product.id)}} src={product.image} height="300px" width="200px" className='image' />
+        })}
+   </div>
         </div>
     </div>
 }

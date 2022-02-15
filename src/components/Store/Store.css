@@ -1,0 +1,15 @@
+.store-details{
+   
+    display: flex;
+    flex-direction: row;
+    
+    
+  }
+  .filters{
+      flex:0.2; 
+  }
+   
+  .store{
+      flex:0.8;
+      background-color: chartreuse;
+  }
