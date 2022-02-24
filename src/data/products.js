@@ -3,8 +3,8 @@ export const Products = [
         id: "1",
         image: "./pictures/tap.jpeg",
         price: 120,
-        description: "ברז מצוייןידי נשים",
-        category: "ברזים"
+        description: "ם",
+        category: "gg"
     },
     {
         id: "2",
@@ -20,5 +20,19 @@ export const Products = [
         description: "ברז מצויין המל ידי נשים",
         category: "taps"
 
+    },
+    {
+        id: "2",
+        image: "./pictures/tap2.jpg",
+        price: 100,
+        description: "ברז מצויין המתאעל ידי נשים",
+        category: "taps"
+    },
+    {
+        id: "2",
+        image: "./pictures/tap2.jpg",
+        price: 100,
+        description: "ברז מצויין המתאעל ידי נשים",
+        category: "taps"
     },
 ]
